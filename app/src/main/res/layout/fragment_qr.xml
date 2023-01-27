@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/canvas_QR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad">
+
+    <ImageView
+        android:id="@+id/ivQRCode"
+        android:layout_width="355dp"
+        android:layout_height="359dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtthanks"
+        android:layout_width="341dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="73dp"
+        android:text="Thank you for dining with us!"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ivQRCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtthanks2"
+        android:layout_width="341dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="35dp"
+        android:text="Please don't clos this window until verified!"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivQRCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

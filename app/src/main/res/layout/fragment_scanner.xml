@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ScannerFragment">
+
+ 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="146dp"
+        android:background="@drawable/roundbutton"
+        android:text="SCAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="393dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="500dp"
+        android:text="Please scan the QR Code of your reserved table"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="396dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/heading_name"
+        android:text="Reserve your Table"
+        android:textAlignment="center"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="344dp"
+        android:layout_height="363dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/qr"
+        app:layout_constraintBottom_toTopOf="@+id/btnScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+ />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

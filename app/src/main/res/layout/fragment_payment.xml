@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad">
+
+
+    <TextView
+        android:id="@+id/txtpaymethod"
+        android:layout_width="258dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="127dp"
+        android:text="@string/payment_method"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpaymethod2" />
+
+    <TextView
+        android:id="@+id/txtpaymethod2"
+        android:layout_width="269dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtbillbreak"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/bill_breakup"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textcgst"
+        android:layout_width="174dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="162dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="@string/cgst_2_5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textsgstAmt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewBill" />
+
+    <TextView
+        android:id="@+id/textsgst"
+        android:layout_width="174dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="162dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="@string/sgst_2_5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textcgstAmt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textcgst" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="174dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="162dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="@string/total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textAmount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsgst" />
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="2300"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textcgstAmt" />
+
+    <TextView
+        android:id="@+id/textcgstAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="2300"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textAmount"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textsgstAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="2300"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textcgstAmt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewBill"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPayment"
+        android:layout_width="242dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_height="58dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundbutton"
+        android:elevation="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/proceed_to_payment"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="386dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/round_rect_shape"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpaymethod">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="157dp">
+
+            <RadioButton
+                android:id="@+id/radioCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:checked="true"
+                android:drawableStart="@drawable/ic_baseline_credit_card_24"
+                android:text="@string/card"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/radioUPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:checked="false"
+                android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24"
+                android:text="@string/upi"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/radioCash"
+                android:layout_width="367dp"
+                android:layout_height="48dp"
+
+                android:checked="false"
+                android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24"
+                android:text="@string/cash"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBill"
+        android:layout_width="413dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_rect_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbillbreak"
+        tools:listitem="@layout/orderlist_item" />
+
+    <ProgressBar
+        android:id="@+id/pbBill"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewBill"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerViewBill"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewBill"
+        app:layout_constraintTop_toBottomOf="@+id/txtbillbreak" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

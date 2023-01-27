@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/round_rect_shape"
+    android:elevation="18dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgprepOrderSubCategory"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="18dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBillSubCategory"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="@string/tomato_vegg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cartAddButton"
+        app:layout_constraintEnd_toStartOf="@+id/vegprepOrder"
+        app:layout_constraintStart_toEndOf="@+id/imgprepOrderSubCategory"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <TextView
+        android:id="@+id/priceBillDish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/croissantone_regular"
+        android:text="Rs. 350"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cartAddButton"
+        app:layout_constraintStart_toEndOf="@+id/imgprepOrderSubCategory"
+        app:layout_constraintTop_toBottomOf="@+id/textBillSubCategory"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/quantity_Cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundbutton"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/bmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/bplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/vegprepOrder"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_rect_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/veg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cartAddButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundbutton"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/add_to_cart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#F6F3F3"
+        app:layout_constraintBottom_toBottomOf="@+id/quantity_Cart"
+        app:layout_constraintEnd_toEndOf="@+id/quantity_Cart"
+        app:layout_constraintStart_toStartOf="@+id/quantity_Cart"
+        app:layout_constraintTop_toTopOf="@+id/quantity_Cart"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
