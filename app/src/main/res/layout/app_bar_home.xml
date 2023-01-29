@@ -10,6 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.FoodFactory.AppBarOverlay">
 
@@ -30,7 +31,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_baseline_menu_24"
         android:elevation="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
         android:padding="16dp"
+        android:backgroundTint="@color/white"
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="start|bottom" />
 

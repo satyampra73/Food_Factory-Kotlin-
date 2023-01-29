@@ -31,6 +31,9 @@ class ScannerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         prefs = Prefs(requireContext())
+
+        val direction=ScannerFragmentDirections.actionScannerToNavMenu()
+        findNavController().navigate(direction)
         val barcodeLauncher =
             registerForActivityResult(ScanContract()) { result: ScanIntentResult ->
                 if (result.contents == null) {

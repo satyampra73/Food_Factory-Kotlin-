@@ -11,7 +11,6 @@
         android:theme="@style/Theme.FoodFactory">
         <activity
             android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
             android:theme="@style/Theme.FoodFactory.NoActionBar"
             android:exported="true">
             <intent-filter>

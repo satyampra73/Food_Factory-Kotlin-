@@ -14,13 +14,42 @@
       },
       "oauth_client": [
         {
-          "client_id": "959759804888-n0i02rknkjhs3ev08vd8ee91eb156iue.apps.googleusercontent.com",
+          "client_id": "959759804888-eii0kjpiicu4a62jh1lgni6aufk801dr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.foodfactory",
-            "certificate_hash": "033d0668e98f9d367d8b24d9354de3606388ad27"
+            "certificate_hash": "af99d97fda3dd2b65e2609e11d95dde8ef9427e4"
           }
         },
+        {
+          "client_id": "959759804888-r335pdnuqs6lhr2bige9tkaqqkk0vh1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOK5bMGXBJHCbfUhjZlQOhFaHmPoH0KDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959759804888-r335pdnuqs6lhr2bige9tkaqqkk0vh1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959759804888:android:3f3185390bd6f388266aad",
+        "android_client_info": {
+          "package_name": "com.example.foodfactorystaff"
+        }
+      },
+      "oauth_client": [
         {
           "client_id": "959759804888-r335pdnuqs6lhr2bige9tkaqqkk0vh1e.apps.googleusercontent.com",
           "client_type": 3
