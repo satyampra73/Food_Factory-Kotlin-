@@ -17,7 +17,7 @@ class MenuAdapter(private val fragment: Fragment, val categories: ArrayList<Cate
     RecyclerView.Adapter<MenuAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuAdapter.MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.category_item,
+            R.layout.category_new_layout,
             parent, false
         )
         return MenuAdapter.MyViewHolder(itemView)
